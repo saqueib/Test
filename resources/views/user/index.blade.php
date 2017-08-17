@@ -9,7 +9,7 @@
         </div>
         <div class="col-md-7 page-action text-right">
             @can('agregar_usuarios')
-                <a href="{{ route('users.create') }}" class="btn btn-primary btn-sm"> <i class="glyphicon glyphicon-plus-sign"></i> Create</a>
+                <a href="{{ route('usuarios.create') }}" class="btn btn-primary btn-sm"> <i class="glyphicon glyphicon-plus-sign"></i> Create</a>
             @endcan
         </div>
     </div>
@@ -40,7 +40,7 @@
                     @can('editar_usuarios')
                     <td class="text-center">
                         @include('shared._actions', [
-                            'entity' => 'users',
+                            'entity' => 'usuarios',
                             'id' => $item->id
                         ])
                     </td>

@@ -49,8 +49,8 @@
                     <ul class="nav navbar-nav">
                         @if (Auth::check())
                             @can('ver_usuarios')
-                                <li class="{{ Request::is('users*') ? 'active' : '' }}">
-                                    <a href="{{ route('users.index') }}">
+                                <li class="{{ Request::is('usuarios*') ? 'active' : '' }}">
+                                    <a href="{{ route('usuarios.index') }}">
                                         <span class="text-info glyphicon glyphicon-user"></span> Users
                                     </a>
                                 </li>
